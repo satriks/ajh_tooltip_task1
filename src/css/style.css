@@ -27,8 +27,6 @@ body {
 
 .popover {
   position: absolute;
-  /* top: 0;
-  right: 50px; */
   border: 1px solid burlywood;
 }
 .popover > h2 {
@@ -43,12 +41,10 @@ body {
   content: "";
   position: relative;
   display: flex;
-  justify-self: flex-end;
   width: 4px;
   height: 4px;
   left: 50%;
   bottom: -10px;
-  text-align: center;
 
   border-top: 10px solid burlywood;
   border-right: 10px solid burlywood;
