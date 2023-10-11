@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start-server": "npm start",
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
     "lint": "eslint .",
     "test": "jest",
+    "ci": "start-server-and-test start-server http://localhost:9000 test",
     "coverage": "jest --coverage",
     "e2e": "jest --testPathPattern=./e2e/ --runInBand",
     "doc": "jsdoc -c jsdoc.conf.json",
@@ -45,6 +47,7 @@
     "mini-css-extract-plugin": "^2.7.6",
     "puppeteer": "^21.3.6",
     "standard": "^17.1.0",
+    "start-server-and-test": "^2.0.1",
     "url-loader": "^4.1.1",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
@@ -53,5 +56,4 @@
   "dependencies": {
     "core-js": "^3.6.5"
   }
-
 }
